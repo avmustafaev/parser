@@ -1,0 +1,8 @@
+
+services:
+  avito-bot:
+    build: .
+    container_name: avito-parser-bot
+    environment:
+      - TOKEN=${TOKEN}  # Переменная окружения из .env
+    restart: unless-stopped
